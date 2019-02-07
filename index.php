@@ -32,9 +32,17 @@
 	// $aluno->insert();
 	// echo $aluno;
 
+	//Alterando um usuario
+	// $usuario = new Usuario();
+	// $usuario->loadById(6);
+	// $usuario->update("professor", "456789");
+	// echo $usuario;
+
+	//Excluindo um usuario;
 	$usuario = new Usuario();
 	$usuario->loadById(6);
-	$usuario->update("professor", "456789");
+
+	$usuario->delete();
 	echo $usuario;
 
 ?>
